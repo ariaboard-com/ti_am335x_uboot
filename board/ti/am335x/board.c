@@ -449,8 +449,8 @@ void am33xx_spl_board_init(void)
 	if (tps65217_reg_write(PROT_LEVEL_2, DEFLS2, LDO_VOLTAGE_OUT_3_3, LDO_MASK))	printf("tps65217_reg_write failure\n");
 #endif
 
-	mpu_pll_config(800);
-	puts("CPU: 800MHz\n");
+	mpu_pll_config(720);
+	puts("CPU: 720MHz\n");
 	return;
 
 }
